@@ -5,6 +5,9 @@ class ArticlesController < ApplicationController
     @articles = Article.all.order("created_at DESC")
   end
 
+  def show
+  end
+
   def new
     @article = Article.new
   end
